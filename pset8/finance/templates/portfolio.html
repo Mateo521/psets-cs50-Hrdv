@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+      <tr>
+        <th>Símbolo</th>
+        <th>Nombre</th>
+        <th>Cotizacion</th>
+        <th>Precio</th>
+        <th>TOTAL</th>
+      </tr>
+    {% for cepo in cepos %}
+      <tr>
+        <td>{{ cepo.symbol }}</td>
+        <td>{{ cepo.name }}</td>
+        <td>{{ cepo.shares }}</td>
+        <td>{{ cepo.price }}</td>
+        <td>{{ cepo.total }}</td>
+      </tr>
+    {% endfor %}
+      <tr>
+        <td>CASH</td>
+
+        <td>{{ cash }}</td>
+      </tr>
+      <tr>
+        <td><b>{{ total }}</b></td>
+      </tr>
+    </table>
+
+{% endblock %}

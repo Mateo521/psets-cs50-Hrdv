@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+   Registrarse
+{% endblock %}
+{% block main %}
+<form action="/register" method="get">
+        <div class = "form-group">
+            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Nombre" type="text"/>
+        </div>
+        <divclass = "form-group">
+            <input autocomplete="off" autofocus class="form-control" name="password" placeholder="Contraseña" type="password"/>
+        </div>
+        <divclass = "form-group">
+            <input autocomplete="off" autofocus class="form-control" name="confirmation" placeholder="Repite tu Contraseña" type="password"/>
+        </div>
+                <button class="btn btn-primary" type="submit">Registrarse</button>
+</form>
+{% endblock %}

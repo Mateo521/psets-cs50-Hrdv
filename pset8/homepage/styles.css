@@ -1,0 +1,66 @@
+body
+{
+background-color:#9DFC7F;
+}
+.contenedor
+{
+    background-color: #92E82F;
+    padding-top:20px;
+    text-align:center;
+    padding-bottom:20px;
+    text-decoration:none;
+}
+#gatitos
+{
+    background:#3AE82F;
+    border-radius: 30%;
+    text-align:center;
+    margin:3px;
+}
+.gatito1
+
+{
+    border-image:black 12px solid;
+    background:#9AF668;
+    border-radius:30%;
+}
+.gatito3
+{
+    background:#9AF668;
+    border-radius:30%;
+}
+#pie
+{
+    background-color:#8FBF75;
+    margin:40px;
+    text-align:center;
+    font-size:30px;
+}
+.form-1
+{
+ padding-bottom:20px;
+}
+#contacto
+{
+text-align: center;
+}
+#contenedor-2
+{
+    background-color: #205023;
+    padding-top:20px;
+    text-align:center;
+    padding-bottom:20px;
+    text-decoration:none;
+}
+.jumbotron{
+    background-color:#AFFF5B;
+}
+/* Set the size of the div element that contains the map */
+.mapa
+{
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+

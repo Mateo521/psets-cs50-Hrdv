@@ -1,0 +1,57 @@
+body
+{
+background-color:#FFDF5B;
+}
+.contenedor
+{
+    background-color: #E2BE29;
+    padding-top:20px;
+    text-align:center;
+    padding-bottom:20px;
+    text-decoration:none;
+}
+#gatitos
+{
+    background:#C0E229;
+    border-radius: 30%;
+    text-align:center;
+    margin:3px;
+}
+.gatito1
+
+{
+    border-image:black 12px solid;
+    background:#9AF668;
+    border-radius:30%;
+}
+.gatito3
+{
+    background:#9AF668;
+    border-radius:30%;
+}
+#pie
+{
+    background-color:#AFAA1F;
+    margin:40px;
+    text-align:center;
+    font-size:30px;
+}
+.form-1
+{
+ padding-bottom:20px;
+}
+#contacto
+{
+text-align: center;
+}
+#contenedor-2
+{
+    background-color: #9A8E00;
+    padding-top:20px;
+    text-align:center;
+    padding-bottom:20px;
+    text-decoration:none;
+}
+.jumbotron{
+    background-color:#FFF474;
+}

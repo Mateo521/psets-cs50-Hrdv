@@ -1,0 +1,19 @@
+SELECT title FROM people
+JOIN stars ON stars.person_id = people.id
+-- JOIN directors ON directors.person_id = people.id
+-- JOIN ratings ON ratings.movie_id
+JOIN movies ON movies.id = stars.movie_id
+
+
+WHERE name = "Johnny Depp"
+INTERSECT
+SELECT title
+
+FROM people
+JOIN stars ON stars.person_id = people.id
+-- JOIN directors ON directors.person_id = people.id
+-- JOIN ratings ON ratings.movie_id
+JOIN movies ON movies.id = stars.movie_id
+
+
+WHERE people.name = "Helena Bonham Carter"

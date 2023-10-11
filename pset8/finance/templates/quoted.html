@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+
+{% block title %}Cotizar{% endblock %}
+
+{% block main %}
+<h3 style = "color:#cc0000">Una acción de:{{ quote["symbol"] }} con un costo de <b>{{ quote["price"] |usd }}</b>.</h3>
+{% endblock %}

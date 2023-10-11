@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link rel="stylesheet" href="static/styles3.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">Rooster App</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+
+        <a class="nav-link" href="/ia-carla?">IA-Carla <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/upload">Subir Archivos a la <strong>nube</strong></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Sobre Nosotros
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/#experiencia">Experiencia</a>
+          <a class="dropdown-item" href="/#elegancia">Elegancia</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/gallery?">Archivos <b>Subidos</b></a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Desabilitado</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" id="buscador">
+      <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    </form>
+  {% if session.user_id %}
+
+<p>{{email}}</p>
+
+ <form action="/logout" class="form-inline my-2 my-lg-0" >
+   <button  class="btn btn-outline-success my-2 my-sm-0"  type="submit" >Cerrar Sesión</button>
+    </form>
+
+{% else %}
+
+   <form action="/register" class="form-inline my-2 my-lg-0">
+      <button  class="btn btn-outline-success my-2 my-sm-0"  type="submit" >Registrarse</button>
+    </form>
+
+  <form action="/login" class="form-inline my-2 my-lg-0">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Iniciar Sesión</button>
+    </form>
+{% endif %}
+  </div>
+</nav>
+
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="static/image/4025172.jpg" height="600px" width="600px" class="d-block w-100" alt="..." id="img1">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="letrasimg">Trabajo en equipo</h5>
+        <p class="letrasimg">Nos importa manterte en sintonía con la empresa.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="static/image/3323088.jpg" height="600px" width="600px" class="d-block w-100" alt="..." id="img2">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="letrasimg">Satisfacer tus necesidades</h5>
+        <p class="letrasimg">Brindamos una orden y estructura a tus proyectos.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="static/image/3567818.jpg" height="600px" width="600px" class="d-block w-100" alt="..." id="img3">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="letrasimg">Seguridad</h5>
+        <p class="letrasimg">Rooster App es una empresa a la que confiar, segura y eficiente.</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div style="position:absolute; z-index:30; margin-left:20px;">
+ <h3 style="padding:30px;" class="h3-font">SEMPITERNO</h3>
+</div>
+<div class="press">
+	<div class="sheet"></div>
+
+	<div class="roll"></div>
+	<div class="sheet"></div>
+	<div class="roll"></div>
+	<div class="sheet"></div>
+	<div class="roll"></div>
+
+	<div class="sheet"></div>
+	<div class="sheet"></div>
+	<div class="sheet"></div>
+
+	<div class="sheet"></div>
+	<div class="sheet"></div>
+	<div class="roll"></div>
+</div>
+
+<div>
+
+
+
+
+</div>
+
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Que es la nube?
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+         la nube permite almacenar y acceder a datos y programas a través de Internet en lugar del disco duro de su computadora, puede acceder a ella desde cualquier lugar, usando cualquier dispositivo que nos permita conectarnos a internet.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+         Para que sirve la nube?
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+         Permite centrarse en generar valor e innovar. Reduce costes, tanto iniciales como de mantenimiento posterior. Incrementa la productividad y por tanto, la competitividad de las empresas, además su cliente puede almacenar toda la información de su empresa de forma virtual. Con una gestión correcta de la tecnología, criptografía de su información y contraseñas, es posible descartar dispositivos físicos de almacenamiento, facilitando aún el cambio de información entre los usuarios.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Como subo archivos a la nube?
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+       Hay diversas formas de subir archivos a la nube, una de ellas es con el apartado que nos brinda <strong>Rooster App</strong>, y su servicio a la nube, para subir archivos haga click en el botón "seleccionar archivos". Luego elija el archivo que desee subir y pulse en "Enviar".
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="upload">
+<form action="/upload" method="post" enctype="multipart/form-data" >
+
+  <input type="file" name="ourfile" name="upload">
+  <input type="submit" value="Enviar">
+
+</form>
+</div>
+
+<!--<h4 style="text-align:center;">Para poder subir archivos a la <strong>nube</strong>, <a href="/login?">Inicie Sesión</a></h4>-->
+
+
+<div class="vectores-link">
+<a target="_blank" href='https://www.freepik.es/vectores/tecnologia'>Vector de Tecnología creado por stories - www.freepik.es</a>
+<a target="_blank" href='https://www.freepik.es/vectores/oficina'></a>
+<a target="_blank"  href='https://www.freepik.es/vectores/negocios'></a>
+</div>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>
